@@ -1,0 +1,20 @@
+<div class="container" fxFlex fxFlexAlign="end" fxLayout="column">
+  <mat-list fxFlex>
+    <mat-list-item>
+      <button (click)="closeNavBar()" [routerLink]="['/general-input']" fxFlexFill mat-button color="accent">Nhập ngày sinh</button>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <button (click)="checkData()" [routerLink]="['/ruling-number']" fxFlexFill mat-button color="accent">Số chủ đạo</button>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <button (click)="checkData()" [routerLink]="['/birth-chart']" fxFlexFill mat-button color="accent">Biểu đồ ngày sinh</button>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <button (click)="checkData()" [routerLink]="['/life-peak']" fxFlexFill mat-button color="accent">4 đỉnh cao</button>
+    </mat-list-item>
+  </mat-list>
+
+</div>
