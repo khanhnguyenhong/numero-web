@@ -1,8 +1,11 @@
 #general-input {
   height: 700px;
   display: flex;
+  flex-direction: column;
 
   .middle-field {
     margin: auto;
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -1,8 +1,32 @@
 <div id="general-input">
-  <mat-form-field class="middle-field" appearance="fill">
-    <mat-label>Nhập ngày sinh</mat-label>
-    <input matInput [matDatepicker]="dp3" disabled>
-    <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
-    <mat-datepicker #dp3 disabled="false"></mat-datepicker>
-  </mat-form-field>
+  <div class="middle-field">
+
+    <mat-form-field fxFlex appearance="fill">
+      <mat-label>Chọn ngày sinh</mat-label>
+      <input matInput [matDatepicker]="dp3" [(ngModel)]="inputDate" (dateChange)="storeDOB()" disabled>
+      <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+      <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+    </mat-form-field>
+
+    <div *ngIf="hasDOB" fxFlexFill fxFlexAlign="end" fxLayout="column">
+      <mat-list fxFlex>
+        <mat-list-item>
+          <button (click)="checkData()" [routerLink]="['/ruling-number']" fxFlexFill mat-button color="accent">Số chủ
+            đạo</button>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <button (click)="checkData()" [routerLink]="['/birth-chart']" fxFlexFill mat-button color="accent">Biểu đồ
+            ngày
+            sinh</button>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <button (click)="checkData()" [routerLink]="['/life-peak']" fxFlexFill mat-button color="accent">Năm quan
+            trọng</button>
+        </mat-list-item>
+      </mat-list>
+    </div>
+
+  </div>
 </div>
