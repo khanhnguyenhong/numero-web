@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { FormsModule } from '@angular/forms'; 
-
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
@@ -16,6 +16,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { FakeDbService } from './fake-db/fake-db.service';
 import { GeneralInputComponent } from './general-input/general-input.component';
@@ -50,6 +51,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     FlexLayoutModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
 
     InMemoryWebApiModule.forRoot(FakeDbService, {
       delay: 0,
@@ -68,11 +70,12 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     MatNativeDateModule,
     MatInputModule,
     MatSnackBarModule,
+    MatGridListModule,
 
     AppRoutingModule
   ],
   providers: [
-    {provide: MAT_DATE_LOCALE, useValue: 'vi-VN'},
+    { provide: MAT_DATE_LOCALE, useValue: 'vi-VN' },
     {
       provide: PERFECT_SCROLLBAR_CONFIG,
       useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG

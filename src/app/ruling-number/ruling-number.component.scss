@@ -1,0 +1,38 @@
+#ruling-number-component {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    .title-container {
+        text-align: center;
+        margin-top: 42px;
+    }
+
+    .ruling-number-container {
+        text-align: center;
+        padding: 14px;
+
+        span {
+            font-size: 72px;
+            line-height: 72px;
+        }
+    }
+
+    .description-container {
+        padding: 14px;
+
+        h2 {
+            text-align: center;
+        }
+
+        .description-paragraph {
+            padding-bottom: 14px;
+
+            p {
+                text-align: justify;
+            }
+        }
+
+    }
+}

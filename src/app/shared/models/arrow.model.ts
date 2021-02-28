@@ -1,7 +1,7 @@
-import { ThrowStmt } from "@angular/compiler";
 import { Description } from "./description.model";
 
 export class Arrow {
+    name: string;
     type: ArrowTypeEnum;
     numbers: string[];
     descriptions: Description[];
@@ -27,7 +27,6 @@ export class Arrow {
 }
 
 export enum ArrowTypeEnum {
-    PHYSIC = 'PHYSIC',
-    MENTAL = 'MENTAL',
-    SOUL = 'SOUL'
+    POSITIVE = 'POSITIVE',
+    NEGATIVE = 'NEGATIVE'
 }

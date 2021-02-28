@@ -19,20 +19,17 @@ const routes: Routes = [
     {
         path: 'ruling-number',
         component: RulingNumberComponent,
-        canActivate: [DataCalculationGuard],
-        redirectTo: ''
+        canActivate: [DataCalculationGuard]
     },
     {
         path: 'birth-chart',
         component: BirthChartComponent,
-        canActivate: [DataCalculationGuard],
-        redirectTo: ''
+        canActivate: [DataCalculationGuard]
     },
     {
         path: 'life-peak',
         component: LifePeakComponent,
-        canActivate: [DataCalculationGuard],
-        redirectTo: ''
+        canActivate: [DataCalculationGuard]
     },
     {
         path: 'about',

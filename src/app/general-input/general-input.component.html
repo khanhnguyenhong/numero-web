@@ -11,18 +11,18 @@
     <div *ngIf="hasDOB" fxFlexFill fxFlexAlign="end" fxLayout="column">
       <mat-list fxFlex>
         <mat-list-item>
-          <button (click)="checkData()" [routerLink]="['/ruling-number']" fxFlexFill mat-button color="accent">Số chủ
+          <button [routerLink]="['/ruling-number']" fxFlexFill mat-button color="accent">Số chủ
             đạo</button>
         </mat-list-item>
         <mat-divider></mat-divider>
         <mat-list-item>
-          <button (click)="checkData()" [routerLink]="['/birth-chart']" fxFlexFill mat-button color="accent">Biểu đồ
+          <button [routerLink]="['/birth-chart']" fxFlexFill mat-button color="accent">Biểu đồ
             ngày
             sinh</button>
         </mat-list-item>
         <mat-divider></mat-divider>
         <mat-list-item>
-          <button (click)="checkData()" [routerLink]="['/life-peak']" fxFlexFill mat-button color="accent">Năm quan
+          <button [routerLink]="['/life-peak']" fxFlexFill mat-button color="accent">Năm quan
             trọng</button>
         </mat-list-item>
       </mat-list>

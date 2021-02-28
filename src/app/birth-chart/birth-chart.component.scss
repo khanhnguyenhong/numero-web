@@ -1,0 +1,28 @@
+#birth-chart-component {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    .title-container {
+        text-align: center;
+        margin-top: 42px;
+    }
+
+    .birth-chart-container {
+        margin: 14px -1px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .birth-chart-cell {
+            font-size: 30px;
+            border: 1px solid;
+        }
+    }
+
+    .description-container {
+        width: 100%;
+        padding: 14px;
+    }
+}

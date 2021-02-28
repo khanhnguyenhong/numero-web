@@ -1,25 +1,22 @@
 <div id="app-component">
-    <mat-drawer-container class="main-container" autosize>
+  <mat-drawer-container class="main-container" autosize>
 
-      <div id="content">
+    <div id="content">
 
-        <perfect-scrollbar>
-          <router-outlet></router-outlet>
-        </perfect-scrollbar>
+      <router-outlet></router-outlet>
 
-        <button class="nav-button" type="button" mat-fab color="primary"
-          (click)="drawer.toggle(); showNavButton = false" *ngIf="showNavButton">
-          <mat-icon>menu</mat-icon>
-        </button>
+      <button class="nav-button" type="button" mat-fab color="primary" (click)="drawer.toggle(); showNavButton = false"
+        *ngIf="showNavButton">
+        <mat-icon>menu</mat-icon>
+      </button>
 
-      </div>
+    </div>
 
-      <mat-drawer #drawer class="main-sidenav" mode="push" position="end"
-        (closedStart)="showNavButton = !showNavButton">
+    <mat-drawer #drawer class="main-sidenav" mode="push" position="end" (closedStart)="showNavButton = !showNavButton">
 
-          <app-nav-bar class="max-height" (closeNav)="drawer.toggle()"></app-nav-bar>
+      <app-nav-bar class="max-height" (closeNav)="drawer.toggle()"></app-nav-bar>
 
-      </mat-drawer>
+    </mat-drawer>
 
-    </mat-drawer-container>
+  </mat-drawer-container>
 </div>

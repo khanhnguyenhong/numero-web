@@ -1,1 +1,39 @@
-<p>birth-chart works!</p>
+<div id="birth-chart-component">
+    <div class="title-container">
+        <h1>Biểu đồ ngày sinh</h1>
+    </div>
+    <div class="birth-chart-container">
+        <mat-grid-list cols="3" rowHeight="1:1">
+            <mat-grid-tile class="birth-chart-cell">
+                {{dOB.birthChart.chart[3]}}
+            </mat-grid-tile>
+            <mat-grid-tile class="birth-chart-cell">
+                {{dOB.birthChart.chart[6]}}
+            </mat-grid-tile>
+            <mat-grid-tile class="birth-chart-cell">
+                {{dOB.birthChart.chart[9]}}
+            </mat-grid-tile>
+            <mat-grid-tile class="birth-chart-cell">
+                {{dOB.birthChart.chart[2]}}
+            </mat-grid-tile>
+            <mat-grid-tile class="birth-chart-cell">
+                {{dOB.birthChart.chart[5]}}
+            </mat-grid-tile>
+            <mat-grid-tile class="birth-chart-cell">
+                {{dOB.birthChart.chart[8]}}
+            </mat-grid-tile>
+            <mat-grid-tile class="birth-chart-cell">
+                {{dOB.birthChart.chart[1]}}
+            </mat-grid-tile>
+            <mat-grid-tile class="birth-chart-cell">
+                {{dOB.birthChart.chart[4]}}
+            </mat-grid-tile>
+            <mat-grid-tile class="birth-chart-cell">
+                {{dOB.birthChart.chart[7]}}
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+    <div class="description-container">
+        <h2>Ý nghĩa biểu đồ</h2>
+    </div>
+</div>
