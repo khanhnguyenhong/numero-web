@@ -1,17 +1,21 @@
 <div id="ruling-number-component">
-    <div class="title-container">
-        <h1>
-            Số Chủ đạo của bạn là
-        </h1>
-    </div>
-    <div class="ruling-number-container">
-        <span>{{dOB.rulingNumber.number}}</span>
-    </div>
-    <div class="description-container">
-        <h2>Ý nghĩa Số Chủ đạo</h2>
-        <div class="description-paragraph" *ngFor="let des of descriptions">
-            <h3>{{des.type}}</h3>
-            <p>{{des.content}}</p>
+    <perfect-scrollbar>
+
+        <div class="title-container">
+            <h1>
+                Số Chủ đạo của bạn là
+            </h1>
         </div>
-    </div>
+        <div class="ruling-number-container">
+            <span>{{dOB.rulingNumber.number}}</span>
+        </div>
+        <div class="description-container">
+            <h2>Ý nghĩa Số Chủ đạo</h2>
+            <div class="description-paragraph" *ngFor="let des of descriptions">
+                <h3>{{des.type}}</h3>
+                <p>{{des.content}}</p>
+            </div>
+        </div>
+        
+    </perfect-scrollbar>
 </div>
