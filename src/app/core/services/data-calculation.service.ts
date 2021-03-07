@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, from } from 'rxjs';
 import { DOB } from 'src/app/shared/models/DOB.model';
+import { LifePeakService } from 'src/app/shared/services/life-peak.service';
 import { RulingNumberService } from 'src/app/shared/services/ruling-number.service';
 
 @Injectable({
@@ -12,7 +13,8 @@ export class DataCalculationService {
   onDataChange: BehaviorSubject<DOB>;
 
   constructor(
-    private _rulingNumberService: RulingNumberService
+    private _rulingNumberService: RulingNumberService,
+    private _lifePeakService: LifePeakService
   ) {
     this.hasValue = false;
     this.dOB = new DOB();
@@ -21,6 +23,8 @@ export class DataCalculationService {
 
   storeData(dob: DOB) {
     this.dOB = dob;
+    this.dOB.rulingNumber = this._rulingNumberService.constructRulingNumberFromDate(this.dOB.dateString);
+    this._calculateLifePeaks();
     this.onDataChange.next(dob);
     this.hasValue = true;
   }
@@ -30,28 +34,23 @@ export class DataCalculationService {
   }
 
   calculateRulingNumber() {
-    const rulingNumber = this._calculateRulingNumber(this.dOB.dateString);
-    this.dOB.rulingNumber = this._rulingNumberService.getRulingNumber(rulingNumber);
+    this.dOB.rulingNumber = this._rulingNumberService.constructRulingNumberFromDate(this.dOB.dateString);
     this.onDataChange.next(this.dOB);
   }
 
-  _reCalc(_x) {
-    if (_x == 20) return 2;
-    if (_x == 22) return _x;
-    if (_x < 12) {
-      return _x;
+  _calculateLifePeaks() {
+    if (!this.dOB.rulingNumber || !this.dOB.rulingNumber.number) {
+      return;
     }
-    _x = (Math.floor(_x / 10) + _x % 10);
-    return this._reCalc(_x);
+    let day = this.dOB.originDate.getDate() + "",
+      month = (this.dOB.originDate.getMonth() + 1) + "",
+      year = this.dOB.originDate.getFullYear() + "";
+    this.dOB.lifePeaks = this._lifePeakService.constructLifePeaks(day, month, year, this.dOB.rulingNumber.number);
   }
 
-  _calculateRulingNumber(dateString) {
-    let rulingNumbers = 0;
-
-    for (let index = 0; index < dateString.length; index++) {
-      rulingNumbers += (dateString.charCodeAt(index) - 48);
-    }
-
-    return this._reCalc(rulingNumbers);
+  reCalculateLifePeaks(){
+    this.dOB.rulingNumber = this._rulingNumberService.constructRulingNumberFromDate(this.dOB.dateString);
+    this._calculateLifePeaks();
+    this.onDataChange.next(this.dOB);
   }
 }

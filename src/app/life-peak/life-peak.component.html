@@ -1,1 +1,21 @@
-<p>life-peak works!</p>
+<div id="life-peak-component">
+    <perfect-scrollbar>
+
+        <div class="title-container">
+            <h1>
+                4 đỉnh cao
+            </h1>
+        </div>
+
+        <div *ngFor="let lp of lifePeaks; let i=index">
+            <div class="description-container">
+                <h2>Đỉnh cao thứ {{i+1}} vào năm {{lp.age}} tuổi: số {{lp.number}}</h2>
+                <div class="description-paragraph" *ngFor="let des of lp.descriptions">
+                    <h3>{{des.type}}</h3>
+                    <p>{{des.content}}</p>
+                </div>
+            </div>
+        </div>
+
+    </perfect-scrollbar>
+</div>

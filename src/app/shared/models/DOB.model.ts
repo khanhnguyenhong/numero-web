@@ -1,23 +1,26 @@
 import { Arrow } from "./arrow.model";
+import { LifePeak } from "./life-peak.model";
 import { RulingNumber } from "./ruling-number.model";
 
 export class DOB {
     dateString: string;
-    originDate: any;
+    originDate: Date;
     birthChart: BirthChart;
     rulingNumber: RulingNumber;
+    lifePeaks: LifePeak[];
     constructor(dob?) {
         if (dob) {
             this.dateString = dob.dateString;
             this.originDate = dob.originDate;
             this.birthChart = dob.birthChart;
             this.rulingNumber = dob.rulingNumber;
+            this.lifePeaks = dob.lifePeaks;
         } else {
             this.dateString = '';
             this.birthChart = new BirthChart();
             this.rulingNumber = new RulingNumber();
+            this.lifePeaks = [];
         }
-
     }
 }
 

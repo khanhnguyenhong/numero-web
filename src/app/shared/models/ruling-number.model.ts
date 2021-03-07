@@ -1,4 +1,3 @@
-import { ThrowStmt } from "@angular/compiler";
 import { Description } from "./description.model";
 
 export class RulingNumber {
