@@ -14,7 +14,7 @@
 
       .nav-button {
         position: fixed;
-        bottom: 8px;
+        bottom: 16px;
         right: 8px;
         z-index: 1;
       }
@@ -41,6 +41,7 @@
   .mat-h3,
   .mat-subheading-2,
   .mat-typography h3 {
-    font-family: "Courier", "Helvetica Neue", sans-serif;
+    // font-family: "Courier", "Helvetica Neue", sans-serif;
+    font-weight: 400;
   }
 }
