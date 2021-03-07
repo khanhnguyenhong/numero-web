@@ -24,5 +24,5 @@ export enum DescriptionTypeEnum {
     RECOMMENDATION = 'NHỮNG ĐỀ XUẤT PHÁT TRIỂN',
     CAREER = 'NGHỀ NGHIỆP THÍCH HỢP',
     SUMMARY = 'TÓM LƯỢC',
-    UNCLASSIFIED = 'UNCLASSIFIED'
+    UNCLASSIFIED = ' '
 }
