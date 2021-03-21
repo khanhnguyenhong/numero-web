@@ -35,5 +35,12 @@
     </div>
     <div class="description-container">
         <h2>Ý nghĩa biểu đồ</h2>
+        <div *ngFor="let arrow of dOB.arrows">
+            <h3>Mũi tên {{arrow.type == 'NEGATIVE' ? 'trống':''}} {{arrow.name}}</h3>
+            <div class="description-paragraph" *ngFor="let des of arrow.descriptions">
+                <h3>{{des.type}}</h3>
+                <p>{{des.content}}</p>
+            </div>
+        </div>
     </div>
 </div>

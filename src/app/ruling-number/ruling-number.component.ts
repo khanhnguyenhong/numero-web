@@ -22,6 +22,7 @@ export class RulingNumberComponent implements OnInit {
       if (dob.rulingNumber && dob.rulingNumber.number) {
         this.dOB = dob;
         this.descriptions = this.dOB.rulingNumber.descriptions;
+        this.descriptions.forEach(des => des = { ...des, ...{ expanded: false } });
       } else {
         this._dataCalculaionService.calculateRulingNumber();
       }

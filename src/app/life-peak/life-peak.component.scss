@@ -23,6 +23,10 @@
     .description-container {
         padding: 14px;
 
+        .mat-icon {
+            vertical-align: sub;
+        }
+
         h2 {
             text-align: center;
         }

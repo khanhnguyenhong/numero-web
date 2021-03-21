@@ -12,8 +12,10 @@
         <div class="description-container">
             <h2>Ý nghĩa Số Chủ đạo</h2>
             <div class="description-paragraph" *ngFor="let des of descriptions">
-                <h3>{{des.type}}</h3>
-                <p>{{des.content}}</p>
+                <h3 (click)="des.expanded = !des.expanded">{{des.type}}  
+                    <mat-icon *ngIf="!des.expanded">keyboard_arrow_up</mat-icon>
+                    <mat-icon *ngIf="des.expanded">keyboard_arrow_down</mat-icon></h3>
+                <p *ngIf="des.expanded">{{des.content}}</p>
             </div>
         </div>
         

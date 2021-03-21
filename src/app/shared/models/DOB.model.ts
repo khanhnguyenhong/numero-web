@@ -8,6 +8,7 @@ export class DOB {
     birthChart: BirthChart;
     rulingNumber: RulingNumber;
     lifePeaks: LifePeak[];
+    arrows: Arrow[];
     constructor(dob?) {
         if (dob) {
             this.dateString = dob.dateString;
@@ -15,11 +16,13 @@ export class DOB {
             this.birthChart = dob.birthChart;
             this.rulingNumber = dob.rulingNumber;
             this.lifePeaks = dob.lifePeaks;
+            this.arrows = dob.arrows;
         } else {
             this.dateString = '';
             this.birthChart = new BirthChart();
             this.rulingNumber = new RulingNumber();
             this.lifePeaks = [];
+            this.arrows = [];
         }
     }
 }

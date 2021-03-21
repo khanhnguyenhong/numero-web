@@ -8,7 +8,7 @@ import { LifePeak } from '../shared/models/life-peak.model';
   styleUrls: ['./life-peak.component.scss']
 })
 export class LifePeakComponent implements OnInit {
-  lifePeaks: LifePeak[];
+  lifePeaks: any[];
 
   constructor(
     private _dataCalculaionService: DataCalculationService
@@ -25,6 +25,7 @@ export class LifePeakComponent implements OnInit {
       if (dob.rulingNumber && dob.rulingNumber.number) {
         if (dob.lifePeaks) {
           this.lifePeaks = dob.lifePeaks;
+          this.lifePeaks.forEach(lP => lP = { ...lP, ...{ expanded: false } });
         } else {
           this._dataCalculaionService.reCalculateLifePeaks();
         }
