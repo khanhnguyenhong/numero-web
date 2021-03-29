@@ -13,20 +13,23 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
     this.metaTagsService.addTags(
       [
-        { 
+        {
           property: 'og:title',
           content: 'About developer'
         },
-        { 
+        {
           property: 'og:type',
           content: 'website'
-        },  { 
+        },
+        {
           property: 'og:image:url',
           content: 'assets/images/cat1.jpg'
-        },  { 
-          property: 'og:image',
-          content: 'assets/images/cat1.jpg'
-        },  { 
+        },
+        // {
+        //   property: 'og:image',
+        //   content: 'assets/images/cat1.jpg'
+        // },
+        {
           property: 'og:description',
           content: 'Site description'
         }
