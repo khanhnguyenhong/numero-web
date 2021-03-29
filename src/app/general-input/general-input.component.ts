@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { DataCalculationService } from '../core/services/data-calculation.service';
 import { DOB } from '../shared/models/DOB.model';
 
@@ -11,7 +12,10 @@ export class GeneralInputComponent implements OnInit {
   hasDOB: boolean;
   inputDate: Date;
 
-  constructor(private _dataCalculaionService: DataCalculationService) {
+  constructor(
+    private _dataCalculaionService: DataCalculationService,
+    private metaTagsService: Meta
+  ) {
     this.inputDate = null;
     this.hasDOB = false;
   }
@@ -22,7 +26,24 @@ export class GeneralInputComponent implements OnInit {
         this.inputDate = dob.originDate;
         this.hasDOB = true;
       }
-    })
+    });
+
+    this.metaTagsService.addTags(
+      [
+        {
+          property: "og:title",
+          content: "Site Title"
+        },
+        {
+          property: 'og:image:url',
+          content: 'src/assets/images/cats.jpg'
+        },
+        {
+          property: "og:description",
+          content: "Site description"
+        }
+      ]
+    );
   }
 
   storeDOB() {
