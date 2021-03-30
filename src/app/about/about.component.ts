@@ -23,12 +23,12 @@ export class AboutComponent implements OnInit {
         },
         {
           property: 'og:image:url',
-          content: 'assets/images/cat1.jpg'
+          content: 'https://dummy-numerology.herokuapp.com/assets/images/cat1.jpg'
         },
-        // {
-        //   property: 'og:image',
-        //   content: 'assets/images/cat1.jpg'
-        // },
+        {
+          property: 'og:image',
+          content: 'https://dummy-numerology.herokuapp.com/assets/images/cat1.jpg'
+        },
         {
           property: 'og:description',
           content: 'Site description'
