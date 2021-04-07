@@ -14,7 +14,6 @@ export class GeneralInputComponent implements OnInit {
 
   constructor(
     private _dataCalculaionService: DataCalculationService,
-    private metaTagsService: Meta
   ) {
     this.inputDate = null;
     this.hasDOB = false;
@@ -27,23 +26,6 @@ export class GeneralInputComponent implements OnInit {
         this.hasDOB = true;
       }
     });
-
-    this.metaTagsService.addTags(
-      [
-        {
-          property: "og:title",
-          content: "Site Title"
-        },
-        {
-          property: 'og:image:url',
-          content: 'src/assets/images/cats.jpg'
-        },
-        {
-          property: "og:description",
-          content: "Site description"
-        }
-      ]
-    );
   }
 
   storeDOB() {

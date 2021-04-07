@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataCalculationService } from '../core/services/data-calculation.service';
 import { Arrow, ArrowTypeEnum } from '../shared/models/arrow.model';
+import { Description } from '../shared/models/description.model';
 import { DOB } from '../shared/models/DOB.model';
 
 @Component({
@@ -10,6 +11,8 @@ import { DOB } from '../shared/models/DOB.model';
 })
 export class BirthChartComponent implements OnInit {
   dOB: DOB;
+  boardNumbers: number[] = [];
+  numerExplanations: Description[] = [];
   arrowNameConst = [
     '123',
     '147',
@@ -38,8 +41,22 @@ export class BirthChartComponent implements OnInit {
             }
           })
         }
+
+        this._generateBoardNumbers();
       }
     });
+  }
+
+  private _generateBoardNumbers() {
+    this.boardNumbers = [];
+    const numArray = this.dOB.dateString.split('');
+    numArray.forEach(num =>
+      this.boardNumbers[num] = this.boardNumbers[num] ? this.boardNumbers[num] + 1 : 1
+    );
+
+    for (let index = 1; index < 10; index++) {
+      //generate Definition for numbers
+    }
   }
 
 }
