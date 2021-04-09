@@ -43,7 +43,7 @@ export class RulingNumberService {
   }
 
   _getRulingNumbers(): Observable<any> {
-    return this._httpClient.get<any>("api/rulingNumbers");
+    return this._httpClient.get<any>("api/ruling-numbers");
   }
 
   _getRulingNumber(number: number): RulingNumber {

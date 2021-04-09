@@ -1,15 +1,23 @@
-//Install express server
 const express = require("express");
+const morgan = require("morgan");
+const chalk = require("chalk");
+const debug = require("debug")("app");
 const path = require("path");
+
+const apiRouter = require('./api/routes/api.route');
 
 const app = express();
 
-// Serve only the static files form the dist directory
-app.use(express.static(__dirname + "/dist/numero-web"));
+app.use(morgan("tiny"));
+app.use(express.static(path.join(__dirname, "/dist/numero-web")));
 
+app.use("/api", apiRouter);
+
+//web application
 app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname + "/dist/numero-web/index.html"));
+  res.sendFile(path.join(__dirname, "/dist/numero-web/index.html"));
 });
 
-// Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 8080, function () {
+  debug("Listening on port " + chalk.green(process.env.PORT || 8080));
+});
