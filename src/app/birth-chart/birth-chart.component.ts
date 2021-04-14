@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { DataCalculationService } from '../core/services/data-calculation.service';
 import { Arrow, ArrowTypeEnum } from '../shared/models/arrow.model';
+import { ChartNumber } from '../shared/models/chart-number.model';
 import { Description } from '../shared/models/description.model';
 import { DOB } from '../shared/models/DOB.model';
+import { BirthChartService } from '../shared/services/birth-chart.service';
 
 @Component({
   selector: 'app-birth-chart',
@@ -12,7 +14,7 @@ import { DOB } from '../shared/models/DOB.model';
 export class BirthChartComponent implements OnInit {
   dOB: DOB;
   boardNumbers: number[] = [];
-  numerExplanations: Description[] = [];
+  chartNumbers: ChartNumber[] = [];
   arrowNameConst = [
     '123',
     '147',
@@ -23,7 +25,9 @@ export class BirthChartComponent implements OnInit {
     '456',
     '789'
   ]
-  constructor(private _dataCalculaionService: DataCalculationService) {
+  constructor(
+    private _dataCalculaionService: DataCalculationService,
+    private _birthChartService: BirthChartService) {
     this.dOB = new DOB();
   }
 
@@ -49,13 +53,27 @@ export class BirthChartComponent implements OnInit {
 
   private _generateBoardNumbers() {
     this.boardNumbers = [];
+    this.chartNumbers = [];
     const numArray = this.dOB.dateString.split('');
     numArray.forEach(num =>
       this.boardNumbers[num] = this.boardNumbers[num] ? this.boardNumbers[num] + 1 : 1
     );
 
     for (let index = 1; index < 10; index++) {
-      //generate Definition for numbers
+      if (this.boardNumbers[index]) {
+        const foundNumbers = this._birthChartService.chartNumbers.filter(cN => cN.number == index);
+        if (foundNumbers && foundNumbers.length) {
+          this.chartNumbers.push(foundNumbers[0]);
+        } else {
+          this._birthChartService.getChartNumber(index).subscribe(
+            response => {
+              if (response) {
+                this._birthChartService.storeChartNumber(response);
+                this.chartNumbers.push(response);
+              }
+            });
+        }
+      }
     }
   }
 
