@@ -7,19 +7,19 @@
             </h1>
         </div>
 
-        <div *ngFor="let lp of lifePeaks; let i=index">
-            <div class="description-container">
-                <h2 (click)="lp.expanded = !lp.expanded">Đỉnh cao thứ {{i+1}} vào năm {{lp.age}} tuổi: số {{lp.number}}
-                    <mat-icon *ngIf="!lp.expanded">keyboard_arrow_up</mat-icon>
-                    <mat-icon *ngIf="lp.expanded">keyboard_arrow_down</mat-icon>
-                </h2>
-
-                <div *ngIf="lp.expanded">
+        <div class="description-container">
+            <mat-accordion>
+                <mat-expansion-panel *ngFor="let lp of lifePeaks; let i=index">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Đỉnh cao thứ {{i+1}} vào năm {{lp.age}} tuổi: số {{lp.number}}
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
                     <div class="description-paragraph" *ngFor="let des of lp.descriptions">
-                        <p>{{des.content}}</p>
+                        <pre>{{des.content}}</pre>
                     </div>
-                </div>
-            </div>
+                </mat-expansion-panel>
+            </mat-accordion>
         </div>
 
     </perfect-scrollbar>

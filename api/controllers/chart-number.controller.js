@@ -54,12 +54,15 @@ const chartNumberDB = [
 
         Ta có thể giúp trẻ thuộc nhóm có quá nhiều số 11111 gia tăng ý thức của chúng bằng cách đưa chúng tham gia các hoạt động nghệ thuật khác nhau, như viết, làm thơ, vẽ, làm đồ gốm, vân vân. Điều này có thể áp dụng được cho trẻ mọi lứa tuổi.`
       }, {
-        flexibleType: "❗️ Càng nhiều số 1, càng trống nhiều số khác trên biểu đồ ngày sinh",
-        content: `Càng nhiều số 1, đồng nghĩa với những con số khác trên biểu đồ ngày sinh càng vắng mặt. Điều này dễ tạo ra nhiều Mũi tên trống (chỉ ba số vắng mặt liền nhau trên một trục ngang, dọc hay xéo), và những mũi tên trống này hay diễn đạt một cá tính khá bất lợi trong cuộc sống. (Bạn hãy nhìn lại các ví dụ 4, 5, 6) Điều này, những ai ý thức được sẽ tập cho mình hay con cái mình những hoạt động để ‘điền’ các ‘con số ảo’ vào các ô trống, để phá các Mũi tên trống này, đồng thời tạo ra các Mũi tên ‘ảo’ nhưng cũng ít nhiều cải thiện cuộc sống bạn.`
-      }, {
-        flexibleType: "❗️ Số 1 ‘lẻ loi’ (Isolated 1s)",
+        flexibleType: "MỘT SỐ LƯU Ý ĐẶC BIỆT",
         content: 
-        `        Đôi khi ngay cả bạn có một số 1 mà thôi, nhưng vì bạn có nhiều con số 3, hoặc 7, hoặc 9 lặp lại, bạn vẫn có thể chịu cảnh ‘lẻ loi’ cho con số 1 như thường. Đây cũng là một trường hợp đặc biệt, cần để ý, quan tâm và giúp đỡ.
+        `        Càng nhiều số 1, càng trống nhiều số khác trên biểu đồ ngày sinh
+        
+        Càng nhiều số 1, đồng nghĩa với những con số khác trên biểu đồ ngày sinh càng vắng mặt. Điều này dễ tạo ra nhiều Mũi tên trống (chỉ ba số vắng mặt liền nhau trên một trục ngang, dọc hay xéo), và những mũi tên trống này hay diễn đạt một cá tính khá bất lợi trong cuộc sống. (Bạn hãy nhìn lại các ví dụ 4, 5, 6) Điều này, những ai ý thức được sẽ tập cho mình hay con cái mình những hoạt động để ‘điền’ các ‘con số ảo’ vào các ô trống, để phá các Mũi tên trống này, đồng thời tạo ra các Mũi tên ‘ảo’ nhưng cũng ít nhiều cải thiện cuộc sống bạn.
+        
+        Số 1 ‘lẻ loi’ (Isolated 1s)
+        
+        Đôi khi ngay cả bạn có một số 1 mà thôi, nhưng vì bạn có nhiều con số 3, hoặc 7, hoặc 9 lặp lại, bạn vẫn có thể chịu cảnh ‘lẻ loi’ cho con số 1 như thường. Đây cũng là một trường hợp đặc biệt, cần để ý, quan tâm và giúp đỡ.
 
         Cụ thể, nếu xung quanh con số 1 của bạn thiếu sự có mặt của số 2, số 5, số 4, tự nhiên con số 1 của bạn trở thành một ‘ốc đảo cô đơn’ (Ví dụ 5, ví dụ 6, lưu ý những dấu chéo đỏ, trống không xung quanh số 1). Điều này diễn đạt càng rõ nét vì sao những người có biểu đồ ngày sinh như thế này rất thường cảm thấy cô độc và không ai hiểu mình. Những người này thường có những con số hàng ngang ở trên cùng (trục Trí não, tức số 3, 6 hoặc 9) tập trung hơn, hoặc có hẳn một Mũi tên chỉ Hoạt động (7,8,9) như ví dụ 4. Trong những trường hợp này, họ rất hay bị hiểu lầm trong những điều họ nói, những việc họ làm, hoặc thấy khó giải thích được cho rõ, cho đúng những lời nói hay hành động của mình.
         
@@ -71,7 +74,7 @@ const chartNumberDB = [
     number: 2,
     descriptions: [
       {
-        flexibleType: "",
+        flexibleType: "GIỚI THIỆU",
         content: 
         `        Với vị trí nằm ở cổng vào trục Tâm hồn (trục gồm ba số: 2-5-8), số 2 là chìa khóa dẫn đến trực giác, sự nhạy cảm và cảm giác. Trong toàn bộ chín số tự nhiên, số 2 rất thường hay có mặt trên biểu đồ ngày sinh, chỉ sau số 1 và số 9 thôi. Và chắc chắn khi chúng ta bước sâu vào thế kỷ 21, từ đây trở về sau, dần dà số 2 sẽ trở nên phổ biến vô cùng.
 
@@ -124,14 +127,11 @@ const chartNumberDB = [
         Những người có ngày sinh mang 22222 rất dễ phản ứng với sự nhạy cảm đặc biệt lớn của mình. Họ rất cần sự quan tâm và hướng dẫn cực kỳ tập trung, tận tâm từ cha mẹ, thầy cô… khi họ còn rất nhỏ, và họ thường thử thách lòng kiên nhẫn của những người khác tới tận cùng.
         `
       },{
-        flexibleType: "❗️ MỘT SỐ LƯU Ý ĐẶC BIỆT",
+        flexibleType: "MỘT SỐ LƯU Ý ĐẶC BIỆT",
         content: 
-        `        ❗️ Trong những thập niên tới đây, không chỉ có năm con 2, mà chúng ta sẽ còn có dịp nhìn thấy sáu con 2, như trong ngày sinh của người sinh ra vào 22/2/2022, hoặc thậm chí, bảy con 2, như trong ngày sinh ‪22/2/2222‬ và ‪22/12/2222‬. Điều này để nhắc nhở trước rằng, các bậc phụ huynh nào có con sinh vào những ngày này cần đặc biệt lưu ý để dìu dắt và kiên nhẫn với con ngay từ khi rất nhỏ, thì mới mong con mình sẽ có thể điều chỉnh được phần nào sự nhạy cảm quá mức với cảm xúc để sống được bình thường, vui vẻ.
-        `
-      },{
-        flexibleType: "❗️ MỘT SỐ LƯU Ý ĐẶC BIỆT",
-        content: 
-        `        ❗️ Khi nhiều số 2 được lặp lại, đồng nghĩa với những ô trống trên những vị trí số khác trên biểu đồ ngày sinh càng nhiều. Điều này tạo thành những Mũi tên trống, chỉ một số cá tính tương đối bất lợi cho người mang nhiều số 2. Tuy vậy, hãy ghi nhớ: những gì bạn nhìn thấy trên biểu đồ ngày sinh chỉ mới là ‘số vốn ban đầu’ khi bạn vào đời. Ngày nào bạn nhìn ra được những điểm này, bạn có cơ hội và khả năng điều chỉnh cuộc đời bạn, bằng cách phát triển một số kỹ năng, chịu năng thực hiện một số hoạt động mang tính chất của những con số bạn đang thiếu trên biểu đồ, đặc biệt là những con số nằm giữa trung tâm như số 5 hay các số nằm giữa các trục ngang, trục dọc khác. Điều này thì từ từ, các bài này ở mục Mũi tên chỉ cá tính, mình sẽ chia sẻ nhiều hơn.
+        `        Trong những thập niên tới đây, không chỉ có năm con 2, mà chúng ta sẽ còn có dịp nhìn thấy sáu con 2, như trong ngày sinh của người sinh ra vào 22/2/2022, hoặc thậm chí, bảy con 2, như trong ngày sinh ‪22/2/2222‬ và ‪22/12/2222‬. Điều này để nhắc nhở trước rằng, các bậc phụ huynh nào có con sinh vào những ngày này cần đặc biệt lưu ý để dìu dắt và kiên nhẫn với con ngay từ khi rất nhỏ, thì mới mong con mình sẽ có thể điều chỉnh được phần nào sự nhạy cảm quá mức với cảm xúc để sống được bình thường, vui vẻ.
+        
+        Khi nhiều số 2 được lặp lại, đồng nghĩa với những ô trống trên những vị trí số khác trên biểu đồ ngày sinh càng nhiều. Điều này tạo thành những Mũi tên trống, chỉ một số cá tính tương đối bất lợi cho người mang nhiều số 2. Tuy vậy, hãy ghi nhớ: những gì bạn nhìn thấy trên biểu đồ ngày sinh chỉ mới là ‘số vốn ban đầu’ khi bạn vào đời. Ngày nào bạn nhìn ra được những điểm này, bạn có cơ hội và khả năng điều chỉnh cuộc đời bạn, bằng cách phát triển một số kỹ năng, chịu năng thực hiện một số hoạt động mang tính chất của những con số bạn đang thiếu trên biểu đồ, đặc biệt là những con số nằm giữa trung tâm như số 5 hay các số nằm giữa các trục ngang, trục dọc khác. Điều này thì từ từ, các bài này ở mục Mũi tên chỉ cá tính, mình sẽ chia sẻ nhiều hơn.
         `
       },{
         flexibleType: "",

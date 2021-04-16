@@ -11,6 +11,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule } from '@angular/forms';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [],
@@ -26,6 +27,7 @@ import { MatListModule } from '@angular/material/list';
     MatNativeDateModule,
     MatInputModule,
     MatGridListModule,
+    MatExpansionModule,
     FormsModule
   ],
   exports: [
@@ -39,6 +41,7 @@ import { MatListModule } from '@angular/material/list';
     MatNativeDateModule,
     MatInputModule,
     MatGridListModule,
+    MatExpansionModule,
     FormsModule
   ]
 })

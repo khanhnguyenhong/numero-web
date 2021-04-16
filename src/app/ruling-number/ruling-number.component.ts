@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataCalculationService } from '../core/services/data-calculation.service';
+import { Description } from '../shared/models/description.model';
 import { DOB } from '../shared/models/DOB.model';
 
 @Component({
@@ -9,7 +10,7 @@ import { DOB } from '../shared/models/DOB.model';
 })
 export class RulingNumberComponent implements OnInit {
   dOB: DOB;
-  descriptions: any[];
+  descriptions: Description[];
   constructor(
     private _dataCalculaionService: DataCalculationService
   ) {
@@ -22,7 +23,6 @@ export class RulingNumberComponent implements OnInit {
       if (dob.rulingNumber && dob.rulingNumber.number) {
         this.dOB = dob;
         this.descriptions = this.dOB.rulingNumber.descriptions;
-        this.descriptions.forEach(des => des = { ...des, ...{ expanded: false } });
       } else {
         this._dataCalculaionService.calculateRulingNumber();
       }

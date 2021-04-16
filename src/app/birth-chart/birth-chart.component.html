@@ -1,54 +1,72 @@
 <div id="birth-chart-component">
-    <div class="title-container">
-        <h1>Biểu đồ ngày sinh</h1>
-    </div>
-    <div class="birth-chart-container">
-        <mat-grid-list cols="3" rowHeight="1:1">
-            <mat-grid-tile class="birth-chart-cell">
-                {{dOB.birthChart.chart[3]}}
-            </mat-grid-tile>
-            <mat-grid-tile class="birth-chart-cell">
-                {{dOB.birthChart.chart[6]}}
-            </mat-grid-tile>
-            <mat-grid-tile class="birth-chart-cell">
-                {{dOB.birthChart.chart[9]}}
-            </mat-grid-tile>
-            <mat-grid-tile class="birth-chart-cell">
-                {{dOB.birthChart.chart[2]}}
-            </mat-grid-tile>
-            <mat-grid-tile class="birth-chart-cell">
-                {{dOB.birthChart.chart[5]}}
-            </mat-grid-tile>
-            <mat-grid-tile class="birth-chart-cell">
-                {{dOB.birthChart.chart[8]}}
-            </mat-grid-tile>
-            <mat-grid-tile class="birth-chart-cell">
-                {{dOB.birthChart.chart[1]}}
-            </mat-grid-tile>
-            <mat-grid-tile class="birth-chart-cell">
-                {{dOB.birthChart.chart[4]}}
-            </mat-grid-tile>
-            <mat-grid-tile class="birth-chart-cell">
-                {{dOB.birthChart.chart[7]}}
-            </mat-grid-tile>
-        </mat-grid-list>
-    </div>
-    <div class="description-container">
-        <h2>Ý nghĩa biểu đồ</h2>
-        <div *ngFor="let arrow of dOB.arrows">
-            <h3>Mũi tên {{arrow.type == 'NEGATIVE' ? 'trống':''}} {{arrow.name}}</h3>
-            <div class="description-paragraph" *ngFor="let des of arrow.descriptions">
-                <h3>{{des.type}}</h3>
-                <p>{{des.content}}</p>
+
+    <perfect-scrollbar>
+
+        <div class="title-container">
+            <h1>Biểu đồ ngày sinh</h1>
+        </div>
+        <div class="birth-chart-container">
+            <mat-grid-list cols="3" rowHeight="1:1">
+                <mat-grid-tile class="birth-chart-cell">
+                    {{dOB.birthChart.chart[3]}}
+                </mat-grid-tile>
+                <mat-grid-tile class="birth-chart-cell">
+                    {{dOB.birthChart.chart[6]}}
+                </mat-grid-tile>
+                <mat-grid-tile class="birth-chart-cell">
+                    {{dOB.birthChart.chart[9]}}
+                </mat-grid-tile>
+                <mat-grid-tile class="birth-chart-cell">
+                    {{dOB.birthChart.chart[2]}}
+                </mat-grid-tile>
+                <mat-grid-tile class="birth-chart-cell">
+                    {{dOB.birthChart.chart[5]}}
+                </mat-grid-tile>
+                <mat-grid-tile class="birth-chart-cell">
+                    {{dOB.birthChart.chart[8]}}
+                </mat-grid-tile>
+                <mat-grid-tile class="birth-chart-cell">
+                    {{dOB.birthChart.chart[1]}}
+                </mat-grid-tile>
+                <mat-grid-tile class="birth-chart-cell">
+                    {{dOB.birthChart.chart[4]}}
+                </mat-grid-tile>
+                <mat-grid-tile class="birth-chart-cell">
+                    {{dOB.birthChart.chart[7]}}
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+        <div class="description-container">
+            <h1>Ý nghĩa biểu đồ</h1>
+            <div *ngFor="let arrow of dOB.arrows">
+                <h2>Mũi tên {{arrow.type == 'NEGATIVE' ? 'trống':''}} {{arrow.name}}</h2>
+                <mat-accordion>
+                    <mat-expansion-panel *ngFor="let des of arrow.descriptions">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                {{des.type}}
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <pre>{{des.content}}</pre>
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </div>
+
+            <div *ngFor="let number of chartNumbers">
+                <h2>SỐ {{number.number}}</h2>
+                <mat-accordion>
+                    <mat-expansion-panel *ngFor="let des of number.descriptions">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                {{des.flexibleType}}
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <pre>{{des.content}}</pre>
+                    </mat-expansion-panel>
+                </mat-accordion>
             </div>
         </div>
 
-        <div *ngFor="let number of chartNumbers">
-            <h3>Số {{number.number}}</h3>
-            <div class="description-paragraph" *ngFor="let des of number.descriptions">
-                <h3>{{des.flexibleType}}</h3>
-                <pre>{{des.content}}</pre>
-            </div>
-        </div>
-    </div>
+    </perfect-scrollbar>
+
 </div>
