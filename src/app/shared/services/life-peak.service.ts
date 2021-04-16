@@ -16,7 +16,7 @@ export class LifePeakService {
 
   constructLifePeaks(dayString, monthString, yearString, rulingNumber: number) {
     if (!this.lifePeaks.length) {
-      async () => Promise.all([await this._getLifePeaks()]);
+      (async () => await this._getLifePeaks())();
     }
     let lifePeaks: LifePeak[] = [];
     let baseDay = this._calculateBaseNumber(dayString);
@@ -56,10 +56,13 @@ export class LifePeakService {
   }
 
   _getLifePeaks() {
-    this._httpClient.get<any>("api/lifePeaks").subscribe(lifePeaks => {
-      lifePeaks.forEach(lp => {
-        this.lifePeaks.push(new LifePeak(lp));
-      });
+    return new Promise((resolve, reject) => {
+      this._httpClient.get<any>("api/lifePeaks").subscribe(lifePeaks => {
+        lifePeaks.forEach(lp => {
+          this.lifePeaks.push(new LifePeak(lp));
+        });
+        resolve(true);
+      }, reject);
     })
   }
 

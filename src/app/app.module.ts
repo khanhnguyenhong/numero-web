@@ -28,6 +28,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   imports: [
     BrowserModule,
     NavBarModule,
+    MatSidenavModule,
     MatButtonModule,
     MatIconModule,
     FlexLayoutModule,
@@ -39,8 +40,6 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
       delay: 0,
       passThruUnknownUrl: true,
     }),
-
-    MatSidenavModule,
 
     AppRoutingModule
   ],
