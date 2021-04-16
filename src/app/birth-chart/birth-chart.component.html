@@ -46,8 +46,8 @@
         <div *ngFor="let number of chartNumbers">
             <h3>Số {{number.number}}</h3>
             <div class="description-paragraph" *ngFor="let des of number.descriptions">
-                <h3>{{des.type}}</h3>
-                <p>{{des.content}}</p>
+                <h3>{{des.flexibleType}}</h3>
+                <pre>{{des.content}}</pre>
             </div>
         </div>
     </div>
