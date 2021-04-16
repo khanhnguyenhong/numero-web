@@ -72,14 +72,15 @@ const chartNumberDB = [
     descriptions: [
       {
         flexibleType: "",
-        content: `        Với vị trí nằm ở cổng vào trục Tâm hồn (trục gồm ba số: 2-5-8), số 2 là chìa khóa dẫn đến trực giác, sự nhạy cảm và cảm giác. Trong toàn bộ chín số tự nhiên, số 2 rất thường hay có mặt trên biểu đồ ngày sinh, chỉ sau số 1 và số 9 thôi. Và chắc chắn khi chúng ta bước sâu vào thế kỷ 21, từ đây trở về sau, dần dà số 2 sẽ trở nên phổ biến vô cùng.
+        content: 
+        `        Với vị trí nằm ở cổng vào trục Tâm hồn (trục gồm ba số: 2-5-8), số 2 là chìa khóa dẫn đến trực giác, sự nhạy cảm và cảm giác. Trong toàn bộ chín số tự nhiên, số 2 rất thường hay có mặt trên biểu đồ ngày sinh, chỉ sau số 1 và số 9 thôi. Và chắc chắn khi chúng ta bước sâu vào thế kỷ 21, từ đây trở về sau, dần dà số 2 sẽ trở nên phổ biến vô cùng.
 
         Có được một con 2 trong biểu đồ ngày sinh thật sự là một phước báu, bởi nó sẽ cung cấp cho bạn một sự hướng dẫn giá trị để khai mở các mức độ nhạy cảm và trực giác của bạn. Khi những nhánh này phát triển, bạn sẽ nâng cao được khả năng thấu hiểu bản thân, thấu hiểu người khác, thấu hiểu cuộc sống, và vạn sự sáng tạo quanh mình.
         
         Bạn còn nhớ, ý nghĩa chính của số 1 là ‘Cái Tôi’ trong cá tính? Vậy khi thế kỷ 20 (những năm 19…) đã khép lại và kỷ nguyên mới 2000 mở ra, dần dần, kỷ nguyên của cái Tôi được nhấn mạnh sẽ lùi bước, thay thế bằng một kỷ nguyên của sự nhận thức mang tính trực giác. Bên cạnh đó, cũng đừng lầm cho rằng một người không có số 2 trong biểu đồ ngày sinh thì sẽ hoàn toàn thiếu vắng trực giác hay độ nhạy cảm. Đúng hơn, việc không có số 2 chỉ muốn nhắc rằng người này cần phát triển trực giác và độ nhạy cảm nhiều hơn.
         `
       }, {
-        flexibleType: "MỘT CON 2",
+        flexibleType: "MỘT SỐ 2",
         content: 
         `        Biểu đồ có mỗi một con 2 chỉ một mức độ trực giác cơ bản, nhưng không phải lúc nào cũng đủ trong thế giới đầy tính cạnh tranh này, đặc biệt là đối với đàn ông. Với muôn mặt xã hội hiện giờ đang chú trọng nhiều vào những giá trị nhân tạo, mỗi cá nhân cần phải tự uyển chuyển lắm mới khớp được vào guồng chung, mới mong cạnh tranh thành công. Và điều này không thể có được nếu không có một mức độ nhạy cảm cân bằng cao. Nếu không có sự cân bằng, những người mang bản chất nhạy cảm sẽ dễ dàng bị tổn thương, và thường vì thế đưa ra những phản ứng thiếu khôn ngoan. Giới đàn ông thường dễ chịu tình trạng này hơn phái nữ.
 
@@ -88,16 +89,18 @@ const chartNumberDB = [
         Nhìn chung, người có một con 2 thường dễ cảm thấy họ cần nhiều thời gian để thư giãn, ở ngoài thiên nhiên và tránh xa môi trường cạnh tranh căng thẳng. Lúc này, bạn hãy tham khảo qua Con số chủ đạo mà bạn có, mỗi con số chủ đạo sẽ có một cách định hướng riêng, nhé.
         `
       }, {
-        flexibleType: "HAI CON 2 (22)",
-        content: `Như trên đã đề cập, cặp số 22 trong biểu đồ ngày sinh là một lợi thế to lớn để một người phát triển trực giác và độ nhạy cảm. Nhưng cũng hãy ý thức rằng có của cần biết lấy ra sử dụng, chứ bất cứ điều gì để mãi trong kho trước sau gì cũng sẽ mai một à.
+        flexibleType: "HAI SỐ 2 (22)",
+        content: 
+        `        Như trên đã đề cập, cặp số 22 trong biểu đồ ngày sinh là một lợi thế to lớn để một người phát triển trực giác và độ nhạy cảm. Nhưng cũng hãy ý thức rằng có của cần biết lấy ra sử dụng, chứ bất cứ điều gì để mãi trong kho trước sau gì cũng sẽ mai một à.
 
         Trực giác và độ nhạy cảm lý tưởng này sẽ cho phép người có cặp 22 đạt được trí thông minh trên mức trung bình, dựa trên khả năng thấu hiểu trời cho đối với con người và vạn tình huống xảy ra. Khi cần cái gọi là ‘ấn tượng đầu tiên’, trực giác của những người này cực đáng tin cậy, với độ chính xác và nhanh chóng đáng kinh ngạc. Người khác đối với họ là chân thành hay không, họ đều nhận ra được ngay, miễn là họ không để cái tôi hay trí tưởng tưởng của họ nhảy vào và tô màu, làm biến màu trực giác nguyên thủy họ có.
         
         Sự cân bằng trong độ nhạy cảm xuất phát từ trực giác này, nếu được diễn đạt tích cực, sẽ có khuynh hướng kéo họ vào rất nhiều mặt của cuộc sống. Thường họ sẽ xử lý những việc này rất suôn sẻ, thành công, nhưng họ cũng cần để ý để tránh bị liên quan vào quá nhiều vụ việc, vì việc nào cũng đáng làm. Nếu cứ mê mải lao vào những việc đều cần làm này, hạnh phúc gia đình có thể chịu phương hại. Và nên nhớ, việc gì cũng phải nhớ giữ cân bằng, cân bằng là chìa khóa mở cửa thành công, nha!
         `
       }, {
-        flexibleType: "BA CON 2 (222)",
-        content: `Một khi đã gọi là ‘vượt ngưỡng cân bằng’, chúng ta sẽ bị quá đà. Người có ba số 222 trong biểu đồ ngày sinh thường chịu sự nhạy cảm không cân bằng, một sự quá mức có thể phát triển thành một dạng gánh nặng tâm lý khó thể chịu nổi. Điều này có nghĩa là người này rất dễ bị tác động bởi tâm trạng của người khác, hậu quả là khả năng rất cao luôn bị lôi kéo sâu vào các vấn đề, các trục trặc của người khác.
+        flexibleType: "BA SỐ 2 (222)",
+        content: 
+        `        Một khi đã gọi là ‘vượt ngưỡng cân bằng’, chúng ta sẽ bị quá đà. Người có ba số 222 trong biểu đồ ngày sinh thường chịu sự nhạy cảm không cân bằng, một sự quá mức có thể phát triển thành một dạng gánh nặng tâm lý khó thể chịu nổi. Điều này có nghĩa là người này rất dễ bị tác động bởi tâm trạng của người khác, hậu quả là khả năng rất cao luôn bị lôi kéo sâu vào các vấn đề, các trục trặc của người khác.
 
         Để đảm bảo một chế độ tự bảo vệ đầy nhạy cảm, những người này hay bỏ nhiều thời gian chìm đắm trong thế giới riêng của mình, qua đó lộ ra vẻ đơn độc mà nếu để lâu, dần dà phát triển thành sự cô độc.
         Nhiều người với 222 làm việc trong ngành giải trí sẽ dễ dàng chạm tới thành công khi áp mình vào khắc họa tính cách của những nhân vật khác nhau. Tuy vậy, nói nôm na là đôi khi quá nhập tâm vào các vai diễn, họ khó trả vai ra được, khiến họ luôn cảm thấy tổn thương. Từ điểm này, lúc nào họ cũng tìm cách tự vệ mình, hay phát biểu một số câu bốc đồng khiến tổn thương người khác.
@@ -105,26 +108,30 @@ const chartNumberDB = [
         Trẻ có 222 thường bắt chước người khác rất giỏi, và chúng luôn có bản năng tự nhiên muốn chia sẻ những cảm giác của người khác. Tuy vậy, việc cảm xúc cứ trồi trồi sụt sụt theo cảm giác, vui buồn của người khác cứ như suốt ngày nhảy lên chơi trò chơi tàu uốn lượn khiến chúng mệt mỏi và mất cân bằng, nên việc này cần được các bậc cha mẹ quan sát và hướng dẫn con cẩn thận. Bởi nhiệm vụ quan trọng của các bậc cha mẹ có con có 222 là giúp con có được nền tảng vững chắc về sự tự tin, cùng với định hướng đường đời theo Con số chủ đạo mà ngày sinh con cộng ra
         `
       },{
-        flexibleType: "BỐN CON 2 (2222)",
-        content: `Tính nhạy cảm cao độ đến nhường này cần được theo dõi cẩn trọng và luôn cần được đặt trong vòng kiểm soát, nếu không nó rất dễ bộc phát thành những sự diễn dịch sai, đi kèm theo tính nóng giận, thói hay mỉa mai và sân si. Những người này cực thiếu kiên nhẫn. Trực giác của họ trở nên kém đáng tin cậy khi họ diễn dịch sai quá nhiều, và họ có khuynh hướng đặt lòng tin nơi nhầm người. Họ thường phản ứng thái quá khi gặp các tình huống và hay trở nên nhẹ dạ, và không cân bằng về mặt cảm xúc.
+        flexibleType: "BỐN SỐ 2 (2222)",
+        content: 
+        `        Tính nhạy cảm cao độ đến nhường này cần được theo dõi cẩn trọng và luôn cần được đặt trong vòng kiểm soát, nếu không nó rất dễ bộc phát thành những sự diễn dịch sai, đi kèm theo tính nóng giận, thói hay mỉa mai và sân si. Những người này cực thiếu kiên nhẫn. Trực giác của họ trở nên kém đáng tin cậy khi họ diễn dịch sai quá nhiều, và họ có khuynh hướng đặt lòng tin nơi nhầm người. Họ thường phản ứng thái quá khi gặp các tình huống và hay trở nên nhẹ dạ, và không cân bằng về mặt cảm xúc.
 
         Gia đình và bạn bè của những người có 2222 cần cực kỳ kiên nhẫn và thấu hiểu, dẫu cho họ có khá ít bạn bè. Theo nghiên cứu và quan sát trong hơn 40 năm của tác giả cuốn The Complete book of Numerology, TS. David A. Phillips cho rằng mặc dù tỉ lệ người có bốn con 2 chiếm một tỉ lệ rất nhỏ trong tổng dân số, tuy nhiên những người này chiếm một thành phần rất cao trong tỉ lệ những người có hôn nhân tan vỡ, hoặc phá sản, hoặc những người phải trú trong các nhà dưỡng tâm thần tại Mỹ. Họ hiếm khi nào chiếm được vị trí cao nơi công sở, nhưng khi được như vậy, họ thường khó được người khác tin cậy, vì thế lúc vươn lên khó và chậm thế nào, khi chìm xuống lại nhanh và sâu tới đáy, ngoại trừ họ phải có những mối dây liên hệ gia đình cực kỳ tích cực ảnh hưởng cao đến họ.
         
         Đời sống của những người có 2222 thường rất cô đơn, nhiều người chịu không được nên mượn rượu chè, các chất gây nghiện, hoặc thói quen gây nghiện khác. Họ có thể tránh được những sự cô độc như vậy nếu họ chịu mở lòng ra để tiếp nhận những tư vấn phù hợp và khôn ngoan. Họ cần phải học được tính tự kiểm soát thật chặt chẽ mỗi khi có điều gì liên quan đến bày tỏ cảm xúc, tranh thủ thư giãn thiền mỗi khi có thể, và chấp nhận trôi theo dòng đời một cách thuận tự nhiên, thay vì cứ lạc quẻ với nó.
         `
       },{
-        flexibleType: "NĂM CON 2 (22222)",
-        content: `Đây là một con số cực kỳ hiếm, chỉ diễn ra có một ngày sinh duy nhất là 22/2/2002 (mà lạ kỳ thay, con một người bạn mình lại sinh đúng ngày này! Và mình đồ rằng, các bạn trên trang cũng sẽ biết nhiều trường hợp tương tự. Vậy ai có con sinh vào ngày này chịu khó đọc những gì bác tác giả này khuyên nhé.)
+        flexibleType: "NĂM SỐ 2 (22222)",
+        content: 
+        `        Đây là một con số cực kỳ hiếm, chỉ diễn ra có một ngày sinh duy nhất là 22/2/2002 (mà lạ kỳ thay, con một người bạn mình lại sinh đúng ngày này! Và mình đồ rằng, các bạn trên trang cũng sẽ biết nhiều trường hợp tương tự. Vậy ai có con sinh vào ngày này chịu khó đọc những gì bác tác giả này khuyên nhé.)
 
         Những người có ngày sinh mang 22222 rất dễ phản ứng với sự nhạy cảm đặc biệt lớn của mình. Họ rất cần sự quan tâm và hướng dẫn cực kỳ tập trung, tận tâm từ cha mẹ, thầy cô… khi họ còn rất nhỏ, và họ thường thử thách lòng kiên nhẫn của những người khác tới tận cùng.
         `
       },{
         flexibleType: "❗️ MỘT SỐ LƯU Ý ĐẶC BIỆT",
-        content: `❗️ Trong những thập niên tới đây, không chỉ có năm con 2, mà chúng ta sẽ còn có dịp nhìn thấy sáu con 2, như trong ngày sinh của người sinh ra vào 22/2/2022, hoặc thậm chí, bảy con 2, như trong ngày sinh ‪22/2/2222‬ và ‪22/12/2222‬. Điều này để nhắc nhở trước rằng, các bậc phụ huynh nào có con sinh vào những ngày này cần đặc biệt lưu ý để dìu dắt và kiên nhẫn với con ngay từ khi rất nhỏ, thì mới mong con mình sẽ có thể điều chỉnh được phần nào sự nhạy cảm quá mức với cảm xúc để sống được bình thường, vui vẻ.
+        content: 
+        `        ❗️ Trong những thập niên tới đây, không chỉ có năm con 2, mà chúng ta sẽ còn có dịp nhìn thấy sáu con 2, như trong ngày sinh của người sinh ra vào 22/2/2022, hoặc thậm chí, bảy con 2, như trong ngày sinh ‪22/2/2222‬ và ‪22/12/2222‬. Điều này để nhắc nhở trước rằng, các bậc phụ huynh nào có con sinh vào những ngày này cần đặc biệt lưu ý để dìu dắt và kiên nhẫn với con ngay từ khi rất nhỏ, thì mới mong con mình sẽ có thể điều chỉnh được phần nào sự nhạy cảm quá mức với cảm xúc để sống được bình thường, vui vẻ.
         `
       },{
         flexibleType: "❗️ MỘT SỐ LƯU Ý ĐẶC BIỆT",
-        content: `❗️ Khi nhiều số 2 được lặp lại, đồng nghĩa với những ô trống trên những vị trí số khác trên biểu đồ ngày sinh càng nhiều. Điều này tạo thành những Mũi tên trống, chỉ một số cá tính tương đối bất lợi cho người mang nhiều số 2. Tuy vậy, hãy ghi nhớ: những gì bạn nhìn thấy trên biểu đồ ngày sinh chỉ mới là ‘số vốn ban đầu’ khi bạn vào đời. Ngày nào bạn nhìn ra được những điểm này, bạn có cơ hội và khả năng điều chỉnh cuộc đời bạn, bằng cách phát triển một số kỹ năng, chịu năng thực hiện một số hoạt động mang tính chất của những con số bạn đang thiếu trên biểu đồ, đặc biệt là những con số nằm giữa trung tâm như số 5 hay các số nằm giữa các trục ngang, trục dọc khác. Điều này thì từ từ, các bài này ở mục Mũi tên chỉ cá tính, mình sẽ chia sẻ nhiều hơn.
+        content: 
+        `        ❗️ Khi nhiều số 2 được lặp lại, đồng nghĩa với những ô trống trên những vị trí số khác trên biểu đồ ngày sinh càng nhiều. Điều này tạo thành những Mũi tên trống, chỉ một số cá tính tương đối bất lợi cho người mang nhiều số 2. Tuy vậy, hãy ghi nhớ: những gì bạn nhìn thấy trên biểu đồ ngày sinh chỉ mới là ‘số vốn ban đầu’ khi bạn vào đời. Ngày nào bạn nhìn ra được những điểm này, bạn có cơ hội và khả năng điều chỉnh cuộc đời bạn, bằng cách phát triển một số kỹ năng, chịu năng thực hiện một số hoạt động mang tính chất của những con số bạn đang thiếu trên biểu đồ, đặc biệt là những con số nằm giữa trung tâm như số 5 hay các số nằm giữa các trục ngang, trục dọc khác. Điều này thì từ từ, các bài này ở mục Mũi tên chỉ cá tính, mình sẽ chia sẻ nhiều hơn.
         `
       },{
         flexibleType: "",

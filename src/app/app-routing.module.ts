@@ -1,39 +1,35 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { BirthChartComponent } from './birth-chart/birth-chart.component';
 import { DataCalculationGuard } from './core/guards/data-calculation.guard';
-import { GeneralInputComponent } from './general-input/general-input.component';
-import { LifePeakComponent } from './life-peak/life-peak.component';
-import { RulingNumberComponent } from './ruling-number/ruling-number.component';
 
 const routes: Routes = [
     {
         path: '',
-        component: GeneralInputComponent,
+        redirectTo: 'general-input',
+        pathMatch: 'full',
     },
     {
         path: 'general-input',
-        component: GeneralInputComponent,
+        loadChildren: () => import('./general-input/general-input.module').then(m => m.GeneralInputModule),
     },
     {
         path: 'ruling-number',
-        component: RulingNumberComponent,
+        loadChildren: () => import('./ruling-number/ruling-number.module').then(m => m.RulingNumberModule),
         canActivate: [DataCalculationGuard]
     },
     {
         path: 'birth-chart',
-        component: BirthChartComponent,
+        loadChildren: () => import('./birth-chart/birth-chart.module').then(m => m.BirthChartModule),
         canActivate: [DataCalculationGuard]
     },
     {
         path: 'life-peak',
-        component: LifePeakComponent,
+        loadChildren: () => import('./life-peak/life-peak.module').then(m => m.LifePeakModule),
         canActivate: [DataCalculationGuard]
     },
     {
         path: 'about',
-        component: AboutComponent
+        loadChildren: () => import('./about/about.module').then(m => m.AboutModule),
     }
 ];
 
