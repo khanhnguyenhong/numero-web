@@ -15,6 +15,16 @@ export class Description {
     }
 }
 
+export class FlexibleDescription extends Description {
+    flexibleType: string;
+    constructor(description) {
+        super(description);
+        if (description && description.flexibleType) {
+            this.flexibleType = description.flexibleType;
+        }
+    }
+}
+
 export enum DescriptionTypeEnum {
     OVERVIEW = 'GIỚI THIỆU',
     LIFE_PATH = 'MỤC ĐÍCH SỐNG',

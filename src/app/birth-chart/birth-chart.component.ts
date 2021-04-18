@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataCalculationService } from '../core/services/data-calculation.service';
 import { Arrow, ArrowTypeEnum } from '../shared/models/arrow.model';
-import { ChartNumber } from '../shared/models/chart-number.model';
-import { Description } from '../shared/models/description.model';
+import { ChartCharacterNumber, ChartNumber } from '../shared/models/chart-number.model';
 import { DOB } from '../shared/models/DOB.model';
 import { BirthChartService } from '../shared/services/birth-chart.service';
 
@@ -13,6 +12,8 @@ import { BirthChartService } from '../shared/services/birth-chart.service';
 })
 export class BirthChartComponent implements OnInit {
   dOB: DOB;
+  name = '';
+  nameNumbers: string[] = ['', '', '', '', '', '', '', '', '', ''];
   boardNumbers: number[] = [];
   chartNumbers: ChartNumber[] = [];
   arrowNameConst = [
@@ -49,6 +50,19 @@ export class BirthChartComponent implements OnInit {
         this._generateBoardNumbers();
       }
     });
+  }
+
+  drawNameNumber() {
+    this.nameNumbers = ['', '', '', '', '', '', '', '', '', ''];
+    this.name = this.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+    if (this.name.length) {
+      for (let i = 0; i < this.name.length; i++) {
+        const chartNum = new ChartCharacterNumber(this.name.charAt(i));
+        chartNum.convert();
+        this.nameNumbers[chartNum.number] += chartNum.number;
+      }
+    }
   }
 
   private _generateBoardNumbers() {

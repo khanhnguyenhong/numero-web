@@ -8,35 +8,44 @@
         <div class="birth-chart-container">
             <mat-grid-list cols="3" rowHeight="1:1">
                 <mat-grid-tile class="birth-chart-cell">
-                    {{dOB.birthChart.chart[3]}}
+                    {{dOB.birthChart.chart[3]}}<span class="name-numbers">{{nameNumbers[3]}}</span>
                 </mat-grid-tile>
                 <mat-grid-tile class="birth-chart-cell">
-                    {{dOB.birthChart.chart[6]}}
+                    {{dOB.birthChart.chart[6]}}<span class="name-numbers">{{nameNumbers[6]}}</span>
                 </mat-grid-tile>
                 <mat-grid-tile class="birth-chart-cell">
-                    {{dOB.birthChart.chart[9]}}
+                    {{dOB.birthChart.chart[9]}}<span class="name-numbers">{{nameNumbers[9]}}</span>
                 </mat-grid-tile>
                 <mat-grid-tile class="birth-chart-cell">
-                    {{dOB.birthChart.chart[2]}}
+                    {{dOB.birthChart.chart[2]}}<span class="name-numbers">{{nameNumbers[2]}}</span>
                 </mat-grid-tile>
                 <mat-grid-tile class="birth-chart-cell">
-                    {{dOB.birthChart.chart[5]}}
+                    {{dOB.birthChart.chart[5]}}<span class="name-numbers">{{nameNumbers[5]}}</span>
                 </mat-grid-tile>
                 <mat-grid-tile class="birth-chart-cell">
-                    {{dOB.birthChart.chart[8]}}
+                    {{dOB.birthChart.chart[8]}}<span class="name-numbers">{{nameNumbers[8]}}</span>
                 </mat-grid-tile>
                 <mat-grid-tile class="birth-chart-cell">
-                    {{dOB.birthChart.chart[1]}}
+                    {{dOB.birthChart.chart[1]}}<span class="name-numbers">{{nameNumbers[1]}}</span>
                 </mat-grid-tile>
                 <mat-grid-tile class="birth-chart-cell">
-                    {{dOB.birthChart.chart[4]}}
+                    {{dOB.birthChart.chart[4]}}<span class="name-numbers">{{nameNumbers[4]}}</span>
                 </mat-grid-tile>
                 <mat-grid-tile class="birth-chart-cell">
-                    {{dOB.birthChart.chart[7]}}
+                    {{dOB.birthChart.chart[7]}}<span class="name-numbers">{{nameNumbers[7]}}</span>
                 </mat-grid-tile>
             </mat-grid-list>
         </div>
         <div class="description-container">
+            <form class="example-form">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Tên thường dùng</mat-label>
+                    <input matInput placeholder="Nhập tên mà bạn thường dùng hay được gọi" [(ngModel)]="name"
+                        name="name" type="text">
+                </mat-form-field>
+                <button (click)="drawNameNumber()" mat-stroked-button color="accent">Điền tên</button>
+                <button (click)="name = ''; drawNameNumber()" mat-stroked-button color="warn">Xóa tên</button>
+            </form>
             <h1>Ý nghĩa biểu đồ</h1>
             <div *ngFor="let arrow of dOB.arrows">
                 <h2>Mũi tên {{arrow.type == 'NEGATIVE' ? 'trống':''}} {{arrow.name}}</h2>
