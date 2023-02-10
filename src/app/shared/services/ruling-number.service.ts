@@ -23,8 +23,8 @@ export class RulingNumberService {
   }
 
   _reCalc(_x) {
-    if (_x == 20) return 2;
-    if (_x == 22) return _x;
+    if (_x == 20) { return 2; }
+    if (_x == 22) { return _x; }
     if (_x < 12) {
       return _x;
     }
@@ -43,7 +43,7 @@ export class RulingNumberService {
   }
 
   _getRulingNumbers(): Observable<any> {
-    return this._httpClient.get<any>("api/ruling-numbers");
+    return this._httpClient.get<any>('api/ruling-numbers');
   }
 
   _getRulingNumber(number: number): RulingNumber {
@@ -55,7 +55,7 @@ export class RulingNumberService {
           this.rulingNumbers.push(new RulingNumber(rN));
         });
         return this.rulingNumbers.filter(rN => rN.number === number)[0];
-      })
+      });
     }
   }
 }
