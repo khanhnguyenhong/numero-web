@@ -5,32 +5,30 @@ import { LifePeak } from '../shared/models/life-peak.model';
 @Component({
   selector: 'app-life-peak',
   templateUrl: './life-peak.component.html',
-  styleUrls: ['./life-peak.component.scss']
+  styleUrls: ['./life-peak.component.scss'],
 })
 export class LifePeakComponent implements OnInit {
   lifePeaks: LifePeak[];
 
-  constructor(
-    private _dataCalculaionService: DataCalculationService
-  ) {
+  constructor(private dataCalculationService: DataCalculationService) {
     this.lifePeaks = [];
   }
 
   ngOnInit(): void {
-    this.lifePeaks = this._dataCalculaionService.dOB.lifePeaks;
+    this.lifePeaks = this.dataCalculationService.dOB.lifePeaks;
     if (!this.lifePeaks || !this.lifePeaks.length) {
-      this._dataCalculaionService.reCalculateLifePeaks();
+      this.dataCalculationService.reCalculateLifePeaks();
     }
-    this._dataCalculaionService.onDataChange.subscribe(dob => {
+    this.dataCalculationService.onDataChange.subscribe((dob) => {
       if (dob.rulingNumber && dob.rulingNumber.number) {
         if (dob.lifePeaks) {
           this.lifePeaks = dob.lifePeaks;
         } else {
-          this._dataCalculaionService.reCalculateLifePeaks();
+          this.dataCalculationService.reCalculateLifePeaks();
         }
       } else {
-        this._dataCalculaionService.calculateRulingNumber();
+        this.dataCalculationService.calculateRulingNumber();
       }
-    })
+    });
   }
 }

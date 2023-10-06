@@ -1,0 +1,31 @@
+<div>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="year">
+      <th mat-header-cell *matHeaderCellDef> Nam </th>
+      <td mat-cell *matCellDef="let element"> {{element.year}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="cang">
+      <th mat-header-cell *matHeaderCellDef> Cang </th>
+      <td mat-cell *matCellDef="let element"> {{element.cang}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="chi">
+      <th mat-header-cell *matHeaderCellDef> Chi </th>
+      <td mat-cell *matCellDef="let element"> {{element.chi}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="mCungPhi">
+      <th mat-header-cell *matHeaderCellDef> Cung Phi Nam </th>
+      <td mat-cell *matCellDef="let element"> {{element.mCungPhi}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="fCungPhi">
+      <th mat-header-cell *matHeaderCellDef> Cung Phi Nu </th>
+      <td mat-cell *matCellDef="let element"> {{element.fCungPhi}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

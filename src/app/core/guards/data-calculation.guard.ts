@@ -8,16 +8,16 @@ import { DataCalculationService } from '../services/data-calculation.service';
 })
 export class DataCalculationGuard implements CanActivate {
   constructor(
-    private _dataCalculationService: DataCalculationService,
-    private _route: Router) {
+    private dataCalculationService: DataCalculationService,
+    private router: Router) {
   }
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    if (this._dataCalculationService.checkData()) {
+    if (this.dataCalculationService.checkData()) {
       return true;
     } else {
-      this._route.navigate(['']);
+      void this.router.navigate(['']);
       return false;
     }
   }

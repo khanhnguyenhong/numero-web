@@ -13,8 +13,8 @@ export class DataCalculationService {
   onDataChange: BehaviorSubject<DOB>;
 
   constructor(
-    private _rulingNumberService: RulingNumberService,
-    private _lifePeakService: LifePeakService
+    private rulingNumberService: RulingNumberService,
+    private lifePeakService: LifePeakService
   ) {
     this.hasValue = false;
     this.dOB = new DOB();
@@ -23,8 +23,8 @@ export class DataCalculationService {
 
   storeData(dob: DOB) {
     this.dOB = dob;
-    this.dOB.rulingNumber = this._rulingNumberService.constructRulingNumberFromDate(this.dOB.dateString);
-    this._calculateLifePeaks();
+    this.dOB.rulingNumber = this.rulingNumberService.constructRulingNumberFromDate(this.dOB.dateString);
+    this.calculateLifePeaks();
     this.onDataChange.next(dob);
     this.hasValue = true;
   }
@@ -34,23 +34,23 @@ export class DataCalculationService {
   }
 
   calculateRulingNumber() {
-    this.dOB.rulingNumber = this._rulingNumberService.constructRulingNumberFromDate(this.dOB.dateString);
+    this.dOB.rulingNumber = this.rulingNumberService.constructRulingNumberFromDate(this.dOB.dateString);
     this.onDataChange.next(this.dOB);
   }
 
-  _calculateLifePeaks() {
+  calculateLifePeaks() {
     if (!this.dOB.rulingNumber || !this.dOB.rulingNumber.number) {
       return;
     }
-    let day = this.dOB.originDate.getDate() + "",
-      month = (this.dOB.originDate.getMonth() + 1) + "",
-      year = this.dOB.originDate.getFullYear() + "";
-    this.dOB.lifePeaks = this._lifePeakService.constructLifePeaks(day, month, year, this.dOB.rulingNumber.number);
+    const day = this.dOB.originDate.getDate() + '';
+      const month = (this.dOB.originDate.getMonth() + 1) + '';
+      const year = this.dOB.originDate.getFullYear() + '';
+    this.dOB.lifePeaks = this.lifePeakService.constructLifePeaks(day, month, year, this.dOB.rulingNumber.number);
   }
 
   reCalculateLifePeaks(){
-    this.dOB.rulingNumber = this._rulingNumberService.constructRulingNumberFromDate(this.dOB.dateString);
-    this._calculateLifePeaks();
+    this.dOB.rulingNumber = this.rulingNumberService.constructRulingNumberFromDate(this.dOB.dateString);
+    this.calculateLifePeaks();
     this.onDataChange.next(this.dOB);
   }
 }

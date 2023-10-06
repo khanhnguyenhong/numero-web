@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LifePeakComponent } from './life-peak.component';
+import { LunarYearComponent } from './lunar-year.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: LifePeakComponent,
+    component: LunarYearComponent,
   },
 ];
 
@@ -13,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class LifePeakRoutingModule {}
+export class LunarYearRoutingModule {}

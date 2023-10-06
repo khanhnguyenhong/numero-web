@@ -1,4 +1,4 @@
-import { Description } from "./description.model";
+import { Description } from './description.model';
 
 export class Arrow {
     name: string;
